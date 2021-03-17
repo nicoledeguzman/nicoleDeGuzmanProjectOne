@@ -1,17 +1,8 @@
-// orange:
-$accent: #F38D8D;
-// dusk blue:
-$primary1: #227284;
-// grey blue:
-$primary2: #68B0C1;
-// light blue grey:
-$primary3: #B9DDE7;
-// white shade:
-$primary4: #F6F6F6;
-// black:
-$black: #171717;
-// white:
-$white: #FFFFFF;
-
-$headerFont: "Oswald";
-$bodyFont: "Cabin";
+@import "./header";
+@import "./footer";
+@import "./home";
+@import "./blogPost";
+@import "./contact";
+@import "./variables";
+@import "./setup";
+@import "./general";

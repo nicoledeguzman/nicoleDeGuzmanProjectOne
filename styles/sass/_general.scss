@@ -1,0 +1,41 @@
+@import "./variables";
+
+* {
+    font-family: $headerFont;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+button {
+    font-family: $headerFont;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $bodyFont;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+        li {
+            list-style-type: none;
+        }
+}
+
+button {
+    padding: 10px 35px;
+    margin: 0;
+    background-color: $accent;
+    color: $black;
+    border: none;
+}
