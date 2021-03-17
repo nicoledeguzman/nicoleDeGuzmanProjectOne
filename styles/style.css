@@ -121,6 +121,29 @@ button {
   border: none;
 }
 
+footer {
+  background-color: #171717;
+  height: 40px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div p {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
 * {
   font-family: "Oswald", sans-serif;
 }

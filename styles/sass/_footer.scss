@@ -1,2 +1,17 @@
 @import "./variables";
 @import "./general";
+
+footer {
+    background-color: $black;
+    height: 40px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                p {
+                    color: white;
+                    margin: 0;
+                    padding: 10px;
+                }
+        }
+}
