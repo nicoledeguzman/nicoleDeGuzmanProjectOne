@@ -118,7 +118,7 @@ div.blogRight {
 
 // comment form section 
 
-form {
+.blogPage form {
     width: 100%;
     margin-bottom: 100px;
         div.textAndButton {
@@ -135,14 +135,14 @@ form {
         }
 }
 
-input[type=text],
-input[type=email] {
+.blogPage input[type=text],
+.blogPage input[type=email] {
     border: none;
     font-family: "Cabin", sans-serif;
     width: calc(50% - (15px / 2));
     padding: 30px 40px;
 }
 
-input[type=text] {
+.blogPage input[type=text] {
     margin-right: 15px;
 }
