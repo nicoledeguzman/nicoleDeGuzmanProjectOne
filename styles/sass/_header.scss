@@ -1,8 +1,10 @@
 @import "./variables";
 @import "./general";
 
-.navBar {
-    display: none;
+@media (min-width: 701px) {
+    .navBar {
+        display: none;
+    }
 }
 
 nav ul {

@@ -6,7 +6,7 @@
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -45,8 +45,10 @@ button {
   border: none;
 }
 
-.navBar {
-  display: none;
+@media (min-width: 701px) {
+  .navBar {
+    display: none;
+  }
 }
 
 nav ul {
@@ -83,7 +85,7 @@ nav ul li a {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -152,7 +154,7 @@ footer div p {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -447,7 +449,7 @@ main p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 85px;
+  padding: 85px 0;
 }
 
 .mainSec5 div img {
@@ -508,7 +510,7 @@ main p {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -588,6 +590,22 @@ button {
   border-bottom: 5px #227284 solid;
 }
 
+.aboutHarper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutHarper img {
+  height: calc(100vw / 3.25);
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .recentPosts {
   margin-top: 20px;
 }
@@ -628,6 +646,7 @@ div.blogRight {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50vw;
 }
 
 .post {
@@ -722,7 +741,7 @@ div.blogRight {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -796,7 +815,7 @@ button {
 
 div.contactBlock {
   width: 500px;
-  height: 300px;
+  height: 350px;
   padding: 40px;
   background-color: #FFFFFF;
   margin-right: 40px;
@@ -1127,7 +1146,7 @@ html {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100vw;
 }
 
 nav,
@@ -1164,4 +1183,339 @@ button {
   background-color: #F38D8D;
   color: #171717;
   border: none;
+}
+
+@media (max-width: 1335px) {
+  .homePage .mainSec4 {
+    height: 725px;
+  }
+  .mainSec4 .homeImg4desc {
+    padding-top: 0;
+  }
+  .mainSec4 div.wrapper div.sideBySide:first-of-type {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .homePage img.mainPic {
+    height: calc(100vw / 2);
+  }
+  .mainSec3 ul {
+    padding: 0 0 50px;
+  }
+  .mainSec1 div.descAndButton {
+    margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainSec1 div.descAndButton p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1180px) {
+  .headerText h1 {
+    left: 25px;
+  }
+  .headerText img {
+    right: -370px;
+  }
+  .homePage .mainSec4 {
+    height: auto;
+  }
+  .mainSec4 div.wrapper div.sideBySide:first-of-type,
+  .mainSec4 div.wrapper div.sideBySide:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .homeImg3,
+  .homeImg4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeImg3 {
+    -webkit-box-shadow: -80px 80px 0 80px #68B0C1;
+            box-shadow: -80px 80px 0 80px #68B0C1;
+  }
+  .homeImg3 img {
+    left: 177px;
+  }
+  .homeImg4 {
+    -webkit-box-shadow: 80px 80px 0 80px #B9DDE7;
+            box-shadow: 80px 80px 0 80px #B9DDE7;
+    background-color: #B9DDE7;
+  }
+  .homeImg4 button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .homeImg4 img {
+    top: -15px;
+    right: 207px;
+  }
+  .mainSec4 .descAndButton {
+    margin: 100px;
+  }
+  .homeImg3desc,
+  .mainSec4 .homeImg4desc {
+    padding: 100px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeImg4desc button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .mainSec5 div {
+    padding: 0;
+  }
+  .mainSec5 div div.descAndButton {
+    padding-top: 0;
+  }
+  .mainSec6 ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainSec6 ul li {
+    padding-bottom: 30px;
+  }
+  .contactPage form {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1090px) {
+  .mainSec3 {
+    height: 200px;
+  }
+  .mainSec3 ul li {
+    width: 25%;
+    margin-top: 10px;
+  }
+  .sec3Right p {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mainPic {
+    display: none;
+  }
+  .headerMid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerText h1 {
+    position: relative;
+    left: 116px;
+    font-size: 7rem;
+    background-color: #B9DDE7;
+    padding: 0 15px 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .headerText img {
+    width: 140px;
+    z-index: 3;
+    left: 405px;
+    top: 170px;
+  }
+  .homePage header {
+    background-image: url("../assets/home-image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .mainSec5 {
+    height: 550px;
+  }
+}
+
+@media (max-width: 950px) {
+  .mainSec1 div.descAndButton p {
+    width: 80vw;
+  }
+  .mainSec1 h2 {
+    text-align: center;
+  }
+  .mainSec5 {
+    height: 500px;
+    margin-bottom: 100px;
+  }
+  .mainSec5 div div.descAndButton {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainSec5 div div.descAndButton h2 {
+    padding-bottom: 40px;
+  }
+  .mainSec5 div div.descAndButton p {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainSec3 h3 {
+    display: none;
+  }
+  .mainSec3 ul {
+    padding: 0 0 50px 10vw;
+  }
+  .homeImg3 img,
+  .homeImg4 img {
+    height: 350px;
+    position: relative;
+    top: -15px;
+    left: 0;
+    right: 0;
+  }
+  .blogPage main div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside {
+    display: none;
+  }
+  div.blogRight {
+    width: 80vw;
+    margin: 0;
+  }
+  div.contactBlock,
+  .contactPage form {
+    width: 80vw;
+  }
+  div.contactBlock {
+    margin: 0 0 40px;
+  }
+  .contactPage main div.wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .blogPage header h1,
+  .contactPage header h1 {
+    top: 315px;
+    font-size: 4rem;
+  }
+  .logo {
+    display: none;
+  }
+  .navBar {
+    font-size: 50px;
+    position: relative;
+    right: 25px;
+    border: none;
+    padding: 0px 2px 15px 2px;
+    background-color: transparent;
+  }
+  .navSec:hover nav,
+  .navSec:focus nav {
+    display: block;
+  }
+  nav {
+    display: none;
+    width: 100px;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: -20px;
+    z-index: 10;
+  }
+  nav li a {
+    display: block;
+    padding: 20px 40px;
+    background-color: #ffffff50;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 200px;
+    margin: 2.5px;
+  }
+  nav li a:hover,
+  nav li a:focus {
+    background-color: #68B0C1;
+  }
+  .homePage header {
+    background-position: center;
+    background-size: cover;
+  }
+  .homePage h1 {
+    left: 0;
+    top: 0;
+  }
+  .headerText img {
+    left: 300px;
+    top: 173px;
+  }
+  .mainSec5 div div.descAndButton {
+    padding-left: 25px;
+  }
+  .blogPage form div,
+  .contactPage form div:first-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage form div input[type=email],
+  .blogPage form div input[type=text],
+  .contactPage form div:first-of-type input[type=email],
+  .contactPage form div:first-of-type input[type=text] {
+    width: 100%;
+  }
+  .blogPage form div input[type=text],
+  .contactPage form div:first-of-type input[type=text] {
+    margin-bottom: 5px;
+  }
 }
