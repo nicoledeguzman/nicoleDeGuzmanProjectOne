@@ -14,11 +14,11 @@ main p {
 
 // header section
 
-nav ul li:first-of-type a {
+.homePage nav ul li:first-of-type a {
     color: $white;
 }
 
-header {
+.homePage header {
     background-color: $primary3;
     height: 100vh;
         .headerMid {

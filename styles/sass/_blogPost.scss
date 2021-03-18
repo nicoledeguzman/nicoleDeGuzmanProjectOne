@@ -1,2 +1,148 @@
 @import "./variables";
 @import "./general";
+
+// header section 
+
+.blogPage nav ul li:nth-of-type(4) a {
+    color: $white;
+}
+
+.blogPage header {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+    background-color: $primary3;
+    height: 470px;
+        h1 {
+            position: relative;
+            top: 290px;
+            font-size: 5rem;
+        }
+}
+
+// main section
+
+.blogPage main {
+    background-color: #F6F6F6;
+    padding-top: 100px;
+}
+
+.blogPage main div {
+    display: flex;
+}
+
+.aboutHarper,
+.recentPosts,
+.post {
+    background-color: $white;
+    padding: 40px;
+}
+
+.post,
+.comment2 {
+    border-bottom: 5px $primary1 solid;
+}
+
+// aside section
+
+// .aboutHarper,
+// .recentPosts {
+//     background-color: $white;
+//     padding: 40px;
+// }
+
+.recentPosts {
+    margin-top: 20px;
+        ul {
+            display: flex;
+            flex-direction: column;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: $bodyFont;
+                }
+        }
+}
+
+.recentPosts ul li {
+    // list-style-image: url(•);
+    line-height: 30px;
+}
+
+.recentPosts ul li:before { 
+    content: "•"; 
+    font-size: 10px;
+    position: relative;
+    right: 20px;
+}
+
+// main blog section
+
+div.blogRight {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+// comments section
+
+.comments {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+        .comment1,
+        .comment2 {
+            padding: 40px;
+            background-color: $white;
+            margin-bottom: 20px;
+                img {
+                    height: 75px;
+                    padding-right: 20px;
+                }
+        }
+}
+
+.comments .right {
+    display: flex;
+    flex-direction: column;
+        p {
+            margin: 0;
+        }
+}
+
+// comment form section 
+
+form {
+    width: 100%;
+    margin-bottom: 100px;
+        div.textAndButton {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+                textarea {
+                    resize: none;
+                    padding: 40px;
+                    font-family: "Cabin", sans-serif;
+                    border: none;
+                    margin-bottom: 20px;
+                }
+        }
+}
+
+input[type=text],
+input[type=email] {
+    border: none;
+    font-family: "Cabin", sans-serif;
+    width: calc(50% - (15px / 2));
+    padding: 30px 40px;
+}
+
+input[type=text] {
+    margin-right: 15px;
+}

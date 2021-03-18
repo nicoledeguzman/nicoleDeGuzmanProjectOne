@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3d1f9c4b2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="blogPage">
     <header>
         <div class="wrapper">
             <!-- navigation section -->
             <button class="navBar">☰</button>
-            <nav class="blogPage">
+            <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li class="logo">Harper</li>
                     <li><a href="blogPost.html">Blog</a></li>
@@ -35,7 +35,7 @@
                 <section class="aboutHarper">
                     <img src="assets/blog-image-2.jpg" alt="Harper lying down on turquoise colour-block painted concrete in a pink fluffy jacket">
                     <h4>About Harper</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi laborum deleniti, iste tenetur quis dolor vitae, consequatur beatae ipsa blanditiis ipsum nobis nostrum eius voluptates sapiente maiores harum veniam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi laborum deleniti, iste tenetur quis dolor vitae.</p>
                 </section>
                 <section class="recentPosts">
                     <h4>Recent posts</h4>
@@ -92,7 +92,7 @@
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" id="email" name="email" placeholder="Email Address">
                     </div>
-                    <div>
+                    <div class="textAndButton">
                         <textarea name="comment" id="comment" cols="70" rows="10" placeholder="Comment" required=""></textarea>
                         <button class="pinkButton">Post comment</button>
                     </div>
