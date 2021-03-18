@@ -1,3 +1,233 @@
 @import "./variables";
 @import "./general";
 
+// home general styling
+
+h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main p {
+    line-height: 32px;
+}
+
+// header section
+
+nav ul li:first-of-type a {
+    color: $white;
+}
+
+header {
+    background-color: $primary3;
+    height: 100vh;
+        .headerMid {
+            display: flex;
+                img.mainPic {
+                    position: relative;
+                    box-shadow: 20px 20px $white ;
+                    top: 75px;
+                }
+                .headerText {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    justify-content: center;
+                }
+        }
+}
+
+.headerText img {
+    position: relative;
+    right: -445px;
+    top: -45px;
+}
+
+.headerText h1 {
+    font-size: 8.75rem;
+    position: absolute;
+    left: 100px;
+}
+
+// main section 1
+
+.mainSec1 {
+    background-color: #F6F6F6;
+        div.descAndButton {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: calc(40% - 10%);
+            margin-left: 52%;
+                button {
+                    width: 172px;
+                }
+        }
+}
+
+// main section 2
+
+.mainSec2 {
+    background-image: url("../assets/home-image-2.jpg");
+    background-position: center;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+// main section 3
+
+.mainSec3 {
+    background-color: #F6F6F6;
+    height: 550px;
+        ul {
+            padding: 50px 0;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+}
+
+.mainSec3 ul li {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainSec3 a {
+    margin-top: 40px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $primary3;
+}
+
+.mainSec3 i {
+    position: relative;
+    top: 12px;
+    right: -15px;
+    width: 45px;
+    color: $black;
+}
+
+.sec3Right {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+// main section 4
+
+.mainSec4 {
+    height: 690px;
+        div.wrapper {
+            display: flex;
+            flex-direction: column;
+                div.sideBySide:first-of-type {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 75px;
+                }
+                div.sideBySide:last-of-type {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+        }
+}
+
+.homeImg3 {
+    height: 190px;
+    background-color: $primary2;
+    position: relative;
+    top: -30px;
+    box-shadow: -80px 80px 0 80px $primary2;
+}
+
+.homeImg3 img {
+    height: 350px;
+    position: relative;
+    top: -15px;
+    right: 15px;
+}
+
+.homeImg3desc {
+    padding: 50px 0 0 75px;
+}
+
+.homeImg4 {
+    height: 190px;
+    position: relative;
+    top: 30px;
+    box-shadow: 110px 110px 0 80px $primary3;
+}
+
+.homeImg4 img {
+    height: 350px;
+    position: relative;
+    top: 15px;
+    right: -15px;
+}
+
+.homeImg4desc {
+    padding: 50px 75px 0 0;
+    display: flex;
+    flex-direction: column;
+        button {
+            align-self: flex-end;
+        }
+}
+
+.mainSec4 button {
+    width: 150px;
+}
+
+// main section 5
+
+.mainSec5 {
+    background-color: #F6F6F6;
+        div {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 85px;
+                img {
+                    width: 275px;
+                    box-shadow: 15px 15px $primary1;
+                }
+                div.descAndButton {
+                    height: calc(275px + 15px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding: 10px 0 0 125px;
+                }
+        }
+}
+
+.mainSec5 h2,
+.mainSec5 p {
+    margin: 0;
+}
+
+// main section 6
+
+.mainSec6 {
+    align-items: center;
+    margin: 100px 0;
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+                img {
+                    width: 390px;
+                    padding: 0 15px;
+                }
+        }
+}
