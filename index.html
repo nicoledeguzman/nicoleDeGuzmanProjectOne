@@ -52,37 +52,37 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <a href="#gallery">
+                        <a href="#gallery" class="icon icon1">
                             <i class="fas fa-image"></i>
                         </a>
-                        <div class="sec3Right">
+                        <div class="sec3Right sec3Right1">
                             <h3>photos</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque consequuntur tempora. Rem eum at ducimus culpa repellendus adipisci vero neque eos in? Neque aliquam quam odio libero, perspiciatis minus.</p>
                         </div>
                     </li>
                     <li>
-                        <a href="#about">
+                        <a href="#about" class="icon icon2">
                             <i class="fas fa-user"></i>
                         </a>
-                        <div class="sec3Right">
+                        <div class="sec3Right sec3Right2">
                             <h3>about</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat ipsum ad quidem minima vel velit dolores corrupti molestias iure excepturi alias possimus nam, eaque, doloribus eum dolor, modi similique.</p>
                         </div>
                     </li>
                     <li>
-                        <a href="blogPost.html">
+                        <a href="blogPost.html" class="icon icon3">
                             <i class="fas fa-desktop"></i>
                         </a>
-                        <div class="sec3Right">
+                        <div class="sec3Right sec3Right3">
                             <h3>blog</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat ipsum ad quidem minima vel velit dolores corrupti molestias iure excepturi alias possimus nam, eaque, doloribus eum dolor, modi similique.</p> 
                         </div>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact.html" class="icon icon4">
                             <i class="fas fa-phone"></i>
                         </a>
-                        <div class="sec3Right">
+                        <div class="sec3Right sec3Right4">
                             <h3>contact me</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat ipsum ad quidem minima vel velit dolores corrupti molestias iure excepturi alias possimus nam, eaque, doloribus eum dolor, modi similique.</p> 
                         </div>
@@ -143,5 +143,64 @@
             <p>Copyright © 2021 Juno College</p>
         </div>
     </footer>
+
+    <!-- js -->
+    <script>
+        
+    // ------- TASKS -------
+    // when icon is hovered:
+    //   - add text to the page
+    // ---------------------
+
+    const icon1 = document.querySelector(".icon1")
+    const icon2 = document.querySelector(".icon2")
+    const icon3 = document.querySelector(".icon3")
+    const icon4 = document.querySelector(".icon4")
+
+    icon1.addEventListener("mouseover", function() {
+
+        const pDesc = document.createElement("p")
+        pDesc.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque consequuntur tempora. Rem eum at ducimus culpa repellendus adipisci vero neque eos in? Neque aliquam quam odio libero, perspiciatis minus.</p>`
+
+        const pDescSpace = document.createTextNode(pDesc)
+
+        pDesc.appendChild(document.querySelector(".icon1"))
+
+    });
+
+    icon2.addEventListener("mouseover", function() {
+
+        const pDesc = document.createElement("p")
+        pDesc.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque consequuntur tempora. Rem eum at ducimus culpa repellendus adipisci vero neque eos in? Neque aliquam quam odio libero, perspiciatis minus.</p>`
+
+        const pDescSpace = document.createTextNode(pDesc)
+
+        pDesc.appendChild(document.querySelector(".icon2"))
+
+    });
+
+    icon3.addEventListener("mouseover", function() {
+
+        const pDesc = document.createElement("p")
+        pDesc.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque consequuntur tempora. Rem eum at ducimus culpa repellendus adipisci vero neque eos in? Neque aliquam quam odio libero, perspiciatis minus.</p>`
+
+        const pDescSpace = document.createTextNode(pDesc)
+
+        pDesc.appendChild(document.querySelector(".icon3"))
+
+    });
+
+    icon4.addEventListener("mouseover", function() {
+
+        const pDesc = document.createElement("p")
+        pDesc.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque consequuntur tempora. Rem eum at ducimus culpa repellendus adipisci vero neque eos in? Neque aliquam quam odio libero, perspiciatis minus.</p>`
+
+        const pDescSpace = document.createTextNode(pDesc)
+
+        pDesc.appendChild(document.querySelector(".icon4"))
+
+    });
+
+    </script>
 </body>
 </html>

@@ -367,3 +367,32 @@
     }
 
 }
+
+@media (max-width: 561px) {
+
+    .mainSec4 .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mainSec4 .descAndButton {
+        margin: 125px auto;
+        width: 80%;
+    }
+
+    .homeImg3 img,
+    .homeImg4 img {
+        width: 100%;
+        height: max-content;
+    }
+
+    .mainSec5 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainSec5 img {
+        padding-top: 25px;
+    }
+
+}

@@ -1519,3 +1519,33 @@ button {
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 561px) {
+  .mainSec4 .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mainSec4 .descAndButton {
+    margin: 125px auto;
+    width: 80%;
+  }
+  .homeImg3 img,
+  .homeImg4 img {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .mainSec5 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainSec5 img {
+    padding-top: 25px;
+  }
+}
